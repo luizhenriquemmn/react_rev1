@@ -64,13 +64,13 @@ class App extends Component{
           key ={indice} //Obrigatorio ter indice
           nome ={comentario.nome}
           email = {comentario.email}
-          data ={comentario.data.toString()}
+          data ={comentario.data}
           onRemove = {this.removerComentario.bind(this,comentario)}>
         {comentario.mensagem}
       </Comentario>
         ))}
 
-      <form method='post' onSubmit={this.adicionarComentario}>
+      <form  method='post' onSubmit={this.adicionarComentario}>
         <h2>AdicionaComentário</h2>
         <div>
           <input 
